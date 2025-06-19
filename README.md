@@ -6,14 +6,20 @@
 </p>
 <br/>
 <p align="center">
-  <img height="450" src="https://github.com/hugotomazi/navigation-bar/blob/master/demoProject/src/assets/example.gif?raw=true">
+  <img height="450" src="https://github.com/jeffreyaboh/capacitor-navigation-bar/blob/master/demoProject/src/assets/example.gif?raw=true">
 </p>
+
+## Version
+| Platform  | Version                                      | Remarks                                                          |
+| ----------- | ------------------------------------------- | --------------------------------------------------------------- |
+| Capacitor | V7+ | Supports older versions of capacitor e.g V5+, V6+ |
+
 
 ## Maintainers
 
 | Maintainer  | GitHub                                      | Website                                                          |
 | ----------- | ------------------------------------------- | --------------------------------------------------------------- |
-| Jeffrey Aboh | [jeffreyaboh](https://github.com/jeffreyaboh) | [@jeffreyaboh](https://jeffreyaboh.co.uk) |
+| Jeffrey Aboh | [jeffreyaboh](https://github.com/jeffreyaboh) | [Jeffrey Aboh](https://jeffreyaboh.co.uk) |
 
 
 ## Install
