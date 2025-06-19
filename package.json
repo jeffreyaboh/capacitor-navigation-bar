@@ -1,5 +1,5 @@
 {
-  "name": "capacitor-navigation-bar",
+  "name": "@ethion/capacitor-navigation-bar",
   "version": "7.0.0",
   "description": "Capacitor Plugin for Navigation Bar",
   "main": "dist/plugin.cjs.js",
@@ -64,7 +64,7 @@
     "typescript": "5.8.3"
   },
   "peerDependencies": {
-    "@capacitor/core": "^7.4.0"
+    "@capacitor/core": ">=4.0.0 <=8.0.0"
   },
   "prettier": "@ionic/prettier-config",
   "swiftlint": "@ionic/swiftlint-config",
