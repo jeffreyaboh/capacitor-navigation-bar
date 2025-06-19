@@ -1,6 +1,6 @@
 <p align="center"><br><img src="https://user-images.githubusercontent.com/236501/85893648-1c92e880-b7a8-11ea-926d-95355b8175c7.png" width="128" height="128" /></p>
 <h3 align="center">Navigation Bar</h3>
-<p align="center"><strong><code>@capacitor-navigation-bar</code></strong></p>
+<p align="center"><strong><code>@ethion/capacitor-navigation-bar</code></strong></p>
 <p align="center">
   Capacitor plugin for Navigation Bar manipulation.
 </p>
@@ -25,7 +25,7 @@
 ## Install
 
 ```bash
-npm install @capacitor-navigation-bar
+npm install @ethion/capacitor-navigation-bar
 npx cap sync
 ```
 
@@ -203,3 +203,43 @@ Event fired after navigation bar color is changed
 | **`COLOR_CHANGE`** | <code>'onColorChange'</code> | Called after navigation bar color is changed |
 
 </docgen-api>
+
+## Usage Example
+
+```typescript
+import { NavigationBar, NavigationBarPluginEvents } from '@ethion/capacitor-navigation-bar';
+
+// Show the navigation bar
+await NavigationBar.show();
+
+// Hide the navigation bar
+await NavigationBar.hide();
+
+// Set navigation bar color
+await NavigationBar.setColor({ color: '#FF0000', darkButtons: true });
+
+// Set transparency
+await NavigationBar.setTransparency({ isTransparent: true });
+
+// Listen for events
+NavigationBar.addListener(NavigationBarPluginEvents.SHOW, () => {
+  console.log('Navigation bar is shown');
+});
+```
+
+## Compatibility
+
+| Capacitor Version | Supported |
+|-------------------|-----------|
+| 7.x               | Yes       |
+| 6.x               | Yes       |
+| 5.x               | Yes       |
+| 4.x               | Yes       |
+
+## Migrating from Other Plugins
+
+If you previously used `capacitor-navigationbar` or other similar plugins, switch to this package for active support and compatibility with the latest Capacitor versions. Update your imports and installation commands as shown above.
+
+## Related Plugins
+
+For status bar control, see the official Capacitor plugin: [@capacitor/status-bar](https://capacitorjs.com/docs/apis/status-bar)
