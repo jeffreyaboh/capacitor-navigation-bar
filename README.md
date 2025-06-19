@@ -4,14 +4,6 @@
 <p align="center">
   Capacitor plugin for Navigation Bar manipulation.
 </p>
-
-<p align="center">
-  <img src="https://img.shields.io/maintenance/yes/2024?style=flat-square" />
-<br/>
-<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=F9VPVZKHK4SZW">
-  <img src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" alt="Donate with PayPal button">
-</a>
-</p>
 <br/>
 <p align="center">
   <img height="450" src="https://github.com/hugotomazi/navigation-bar/blob/master/demoProject/src/assets/example.gif?raw=true">
@@ -19,9 +11,9 @@
 
 ## Maintainers
 
-| Maintainer  | GitHub                                      | Social                                                          |
+| Maintainer  | GitHub                                      | Website                                                          |
 | ----------- | ------------------------------------------- | --------------------------------------------------------------- |
-| Hugo Tomazi | [hugotomazi](https://github.com/hugotomazi) | [@hugotomazi](https://br.linkedin.com/in/hugo-tomazi-299034101) |
+| Jeffrey Aboh | [jeffreyaboh](https://github.com/jeffreyaboh) | [@jeffreyaboh](https://jeffreyaboh.co.uk) |
 
 
 ## Install
