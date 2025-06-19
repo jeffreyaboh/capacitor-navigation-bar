@@ -7,14 +7,6 @@
 
 <p align="center">
   <img src="https://img.shields.io/maintenance/yes/2024?style=flat-square" />
-  <a href="https://github.com/jeffreyaboh/capacitor-navigation-bar/actions?query=workflow%3A%22CI%22"><img src="https://img.shields.io/github/workflow/status/jeffreyaboh/capacitor-navigation-bar/CI/master?style=flat-square" /></a>
-  <a href="https://www.npmjs.com/package/@hugotomazi/capacitor-navigation-bar"><img src="https://img.shields.io/npm/l/@hugotomazi/capacitor-navigation-bar?style=flat-square" /></a>
-<br>
-  <a href="https://www.npmjs.com/package/@hugotomazi/capacitor-navigation-bar"><img src="https://img.shields.io/npm/dw/@hugotomazi/capacitor-navigation-bar?style=flat-square" /></a>
-  <a href="https://www.npmjs.com/package/@hugotomazi/capacitor-navigation-bar"><img src="https://img.shields.io/npm/v/@hugotomazi/capacitor-navigation-bar?style=flat-square" /></a>
-<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-<a href="#contributors-"><img src="https://img.shields.io/badge/all%20contributors-5-orange?style=flat-square" /></a>
-<!-- ALL-CONTRIBUTORS-BADGE:END -->
 <br/>
 <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=F9VPVZKHK4SZW">
   <img src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" alt="Donate with PayPal button">
@@ -22,7 +14,7 @@
 </p>
 <br/>
 <p align="center">
-  <img height="450" src="https://github.com/jeffreyaboh/capacitor-navigation-bar/blob/master/demoProject/src/assets/example.gif?raw=true">
+  <img height="450" src="https://github.com/hugotomazi/navigation-bar/blob/master/demoProject/src/assets/example.gif?raw=true">
 </p>
 
 ## Maintainers
@@ -213,4 +205,3 @@ Event fired after navigation bar color is changed
 | **`COLOR_CHANGE`** | <code>'onColorChange'</code> | Called after navigation bar color is changed |
 
 </docgen-api>
-
