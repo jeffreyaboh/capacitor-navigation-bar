@@ -1,6 +1,6 @@
 {
   "name": "@ethion/capacitor-navigation-bar",
-  "version": "7.0.4",
+  "version": "7.0.5",
   "description": "Capacitor Plugin for Navigation Bar",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
@@ -31,7 +31,21 @@
     "plugin",
     "native",
     "navigation",
-    "bar"
+    "bar",
+    "navigation-bar",
+    "navigationbar",
+    "android",
+    "ios",
+    "statusbar",
+    "mobile",
+    "ionic",
+    "capacitor-plugin",
+    "ui",
+    "system-ui",
+    "theme",
+    "color",
+    "immersive",
+    "full-screen"
   ],
   "scripts": {
     "verify": "npm run verify:ios && npm run verify:android && npm run verify:web",
