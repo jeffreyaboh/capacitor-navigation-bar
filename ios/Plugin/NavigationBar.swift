@@ -1,7 +1,3 @@
 import Foundation
 
-@objc public class NavigationBar: NSObject {
-    @objc public func echo(_ value: String) -> String {
-        return value
-    }
-}
+// This file is now unused. All logic is in NavigationBarPlugin.swift.
