@@ -1,0 +1,19 @@
+# Browserslist configuration to ensure Angular bundles are transpiled for older Android WebView
+# Adjust as needed, but keep ChromeAndroid below 91 to avoid static class blocks in zone.js
+
+[production]
+Chrome >= 79
+ChromeAndroid >= 79
+Edge >= 79
+Firefox >= 68
+iOS >= 12.2
+Safari >= 12.1
+not ie <= 11
+not dead
+
+[development]
+last 1 chrome version
+last 1 firefox version
+last 2 edge major versions
+last 2 safari major versions
+ChromeAndroid >= 79

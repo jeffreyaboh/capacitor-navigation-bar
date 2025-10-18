@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavigationBar, NavigationBarPluginEvents } from 'navigation-bar';
+import { NavigationBar, NavigationBarPluginEvents } from '@ethion/capacitor-navigation-bar';
 @Component({
   selector: 'app-home',
   templateUrl: 'home.page.html',
