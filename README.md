@@ -12,18 +12,18 @@
 ## Version
 | Platform  | Version                                      | Remarks                                                          |
 | ----------- | ------------------------------------------- | --------------------------------------------------------------- |
-| Capacitor | V7+ | Supports older versions of capacitor e.g V5+, V6+ |
+| Capacitor | V8+ | Supports Capacitor 8.0.0 and higher |
 
 ### Compatibility Matrix
 
 | Platform | Minimum | Recommended |
 |----------|---------|-------------|
-| Android  | minSdk 22 | compile/target SDK 35 |
-| iOS      | iOS 14.0  | Xcode 15+, Swift 5.9 |
+| Android  | minSdk 24 | compile/target SDK 36 |
+| iOS      | iOS 15.0  | Xcode 26+, Swift 5.9 |
 
 Notes:
-- Plugin built with Capacitor 7.4.x and Android Gradle Plugin 8.6+ / Gradle 8.7.
-- If your app is on older Capacitor (4–6), pin plugin to a compatible minor and keep your native toolchain aligned.
+- Plugin built with Capacitor 8.0.x and Android Gradle Plugin 8.13.0 / Gradle 8.14.3.
+- Requires Node.js 22+ and npm 10+.
 
 
 ## Maintainers
@@ -45,10 +45,10 @@ npx cap sync
 No special configuration required. Ensure your project meets these platform baselines:
 
 - Android
-  - compileSdk/targetSdk: 35
-  - minSdk: 22+
-  - Java toolchain: JDK 17+ (Capacitor Android 7 requires JDK 17 or 21)
-  - Gradle 8.5+ / AGP 8.2+
+  - compileSdk/targetSdk: 36
+  - minSdk: 24+
+  - Java toolchain: JDK 21+ (Capacitor Android 8 requires JDK 21)
+  - Gradle 8.14.3+ / AGP 8.13.0+
   - If using Angular/Ionic, define a Browserslist that includes ChromeAndroid < 91 to avoid modern JS syntax issues on older WebView. Example:
 
     ```
@@ -59,10 +59,10 @@ No special configuration required. Ensure your project meets these platform base
     ```
 
 - iOS
-  - Xcode 15+
-  - iOS deployment target 14.0+
+  - Xcode 26+
+  - iOS deployment target 15.0+
   - Swift 5.9+
-  - CocoaPods installed (`pod --version`)
+  - Supports both Swift Package Manager (SPM) and CocoaPods
 
 ## API
 
@@ -260,15 +260,47 @@ NavigationBar.addListener(NavigationBarPluginEvents.SHOW, () => {
 
 ## Compatibility
 
-| Capacitor Version | Supported |
-|-------------------|-----------|
-| 7.x               | Yes       |
-| 6.x               | Yes       |
-| 5.x               | Yes       |
+| Capacitor Version | Plugin Version | Install Command |
+|-------------------|----------------|-----------------|
+| 8.x               | 8.x            | `npm i @ethion/capacitor-navigation-bar@8` |
+| 7.x               | 7.x            | `npm i @ethion/capacitor-navigation-bar@7` |
+| 6.x               | 6.x            | `npm i @ethion/capacitor-navigation-bar@6` |
+| 5.x               | 5.x            | `npm i @ethion/capacitor-navigation-bar@5` |
 
-## Migrating from Other Plugins
+### Using with Older Capacitor Versions
 
-If you previously used `capacitor-navigationbar` or other similar plugins, switch to this package for active support and compatibility with the latest Capacitor versions. Update your imports and installation commands as shown above.
+If you're using Capacitor 5, 6, or 7, install the matching plugin version:
+
+```bash
+# For Capacitor 7
+npm install @ethion/capacitor-navigation-bar@7
+npx cap sync
+
+# For Capacitor 6
+npm install @ethion/capacitor-navigation-bar@6
+npx cap sync
+
+# For Capacitor 5
+npm install @ethion/capacitor-navigation-bar@5
+npx cap sync
+```
+
+Each major plugin version is aligned with the corresponding Capacitor major version and includes platform-specific requirements for that version.
+
+## Migrating to v8
+
+If upgrading from v7 or earlier:
+
+1. Update your project to Capacitor 8 first ([migration guide](https://capacitorjs.com/docs/updating/8-0))
+2. Update your dependencies:
+   ```bash
+   npm install @ethion/capacitor-navigation-bar@8
+   npx cap sync
+   ```
+3. Ensure your project meets the minimum requirements:
+   - **Android**: minSdk 24, targetSdk 36, Java 21, Gradle 8.14.3+
+   - **iOS**: iOS 15.0+, Xcode 26+, Swift 5.9+
+   - **Node.js**: 22+
 
 ## Demo project
 
@@ -280,11 +312,14 @@ This repo includes a minimal Ionic Angular demo in `demoProject/` pre-wired to t
   - `npm install`
   - `npx cap sync`
 - Android: open `demoProject/android` in Android Studio, or run Gradle build
-- iOS: `cd demoProject/ios && pod install` then open `App.xcworkspace` in Xcode
+- iOS: `cd demoProject/ios && pod install` then open `App.xcworkspace` in Xcode (or use SPM)
 
 Notes:
-- Demo targets Capacitor 7 and Android SDK 35 / iOS 13+. If you need older support, pin versions accordingly.
+- Demo targets Capacitor 8 and Android SDK 36 / iOS 15+.
+- Supports both Swift Package Manager (SPM) and CocoaPods for iOS.
 
 ## Related Plugins
 
 For status bar control, see the official Capacitor plugin: [@capacitor/status-bar](https://capacitorjs.com/docs/apis/status-bar)
+
+For edge-to-edge and system bars control in Capacitor 8, see: [@capacitor/system-bars](https://capacitorjs.com/docs/apis/system-bars)

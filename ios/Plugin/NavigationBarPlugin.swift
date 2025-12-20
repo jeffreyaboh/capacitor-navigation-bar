@@ -14,13 +14,24 @@ public class NavigationBarPlugin: CAPPlugin {
         ])
     }
 
+    private func getKeyWindow() -> UIWindow? {
+        if #available(iOS 15.0, *) {
+            return UIApplication.shared.connectedScenes
+                .compactMap { $0 as? UIWindowScene }
+                .flatMap { $0.windows }
+                .first { $0.isKeyWindow }
+        } else {
+            return UIApplication.shared.windows.first { $0.isKeyWindow }
+        }
+    }
+
     private func getTargetViewController() -> UIViewController? {
         // Try navigation controller first
         if let navController = self.bridge?.viewController?.navigationController {
             return navController
         }
         // Fallback to rootViewController
-        if let window = UIApplication.shared.windows.first(where: { $0.isKeyWindow }) {
+        if let window = getKeyWindow() {
             return window.rootViewController
         }
         return nil
@@ -69,7 +80,7 @@ public class NavigationBarPlugin: CAPPlugin {
                 navBar.isTranslucent = false
                 navBar.tintColor = darkButtons ? .black : .white
                 navBar.titleTextAttributes = [.foregroundColor: darkButtons ? UIColor.black : UIColor.white]
-            } else if let window = UIApplication.shared.windows.first(where: { $0.isKeyWindow }) {
+            } else if let window = self.getKeyWindow() {
                 window.rootViewController?.view.backgroundColor = color
             }
             self.notifyListeners("onColorChange", data: ["color": colorHex])
@@ -93,7 +104,7 @@ public class NavigationBarPlugin: CAPPlugin {
                     navBar.isTranslucent = false
                     navBar.backgroundColor = self.currentColor
                 }
-            } else if let window = UIApplication.shared.windows.first(where: { $0.isKeyWindow }) {
+            } else if let window = self.getKeyWindow() {
                 if isTransparent {
                     window.rootViewController?.view.backgroundColor = .clear
                 } else {

@@ -1,7 +1,8 @@
 {
   "name": "@ethion/capacitor-navigation-bar",
-  "version": "7.0.6",
+  "version": "8.0.1",
   "description": "Capacitor Plugin for Navigation Bar",
+  "type": "module",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
   "types": "dist/esm/index.d.ts",
@@ -14,6 +15,7 @@
     "ios/Plugin/",
     "ios/Plugin/module.modulemap",
     "ios/Plugin/Plugin.h",
+    "Package.swift",
     "NavigationBar.podspec",
     "EthionCapacitorNavigationBar.podspec"
   ],
@@ -71,11 +73,11 @@
     "release:major": "npm version major -m 'chore(release): %s' && npm publish"
   },
   "devDependencies": {
-    "@capacitor/android": "^7.4.3",
-    "@capacitor/cli": "^7.4.3",
-    "@capacitor/core": "^7.4.3",
+    "@capacitor/android": "^8.0.0",
+    "@capacitor/cli": "^8.0.0",
+    "@capacitor/core": "^8.0.0",
     "@capacitor/docgen": "0.3.0",
-    "@capacitor/ios": "^7.4.3",
+    "@capacitor/ios": "^8.0.0",
     "@ionic/eslint-config": "0.4.0",
     "@ionic/prettier-config": "4.0.0",
     "@ionic/swiftlint-config": "2.0.0",
@@ -88,11 +90,11 @@
     "typescript": "5.9.3"
   },
   "peerDependencies": {
-    "@capacitor/core": ">=5 <8"
+    "@capacitor/core": ">=8.0.0"
   },
   "engines": {
-    "node": ">=18",
-    "npm": ">=9"
+    "node": ">=22",
+    "npm": ">=10"
   },
   "prettier": "@ionic/prettier-config",
   "swiftlint": "@ionic/swiftlint-config",
@@ -108,9 +110,9 @@
     }
   },
   "dependencies": {
-    "@capacitor/app": "^7.1.0",
-    "@capacitor/haptics": "^7.0.2",
-    "@capacitor/keyboard": "^7.0.3",
-    "@capacitor/status-bar": "^7.0.3"
+    "@capacitor/app": "^8.0.0",
+    "@capacitor/haptics": "^8.0.0",
+    "@capacitor/keyboard": "^8.0.0",
+    "@capacitor/status-bar": "^8.0.0"
   }
 }
