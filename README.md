@@ -6,13 +6,13 @@
 </p>
 <br/>
 <p align="center">
-  <img height="450" src="https://github.com/jeffreyaboh/capacitor-navigation-bar/blob/master/demoProject/src/assets/example.gif?raw=true">
+  <img height="450" src="https://github.com/ethion-cloud/capacitor-navigation-bar/blob/master/demoProject/src/assets/example.gif?raw=true">
 </p>
 
 ## Version
 | Platform  | Version                                      | Remarks                                                          |
 | ----------- | ------------------------------------------- | --------------------------------------------------------------- |
-| Capacitor | V8+ | Supports Capacitor 8.0.0 and higher |
+| Capacitor | V6+ | Supports Capacitor 6.0.0 and higher |
 
 ### Compatibility Matrix
 
@@ -30,7 +30,7 @@ Notes:
 
 | Maintainer  | GitHub                                      | Website                                                          |
 | ----------- | ------------------------------------------- | --------------------------------------------------------------- |
-| Jeffrey Aboh | [jeffreyaboh](https://github.com/jeffreyaboh) | [Jeffrey Aboh](https://jeffreyaboh.co.uk) |
+| Ethion | [ethion-cloud](https://github.com/ethion-cloud) | [Ethion](https://ethion.co.uk) |
 
 
 ## Install

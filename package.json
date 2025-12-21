@@ -1,6 +1,6 @@
 {
   "name": "@ethion/capacitor-navigation-bar",
-  "version": "8.0.1",
+  "version": "8.0.2",
   "description": "Capacitor Plugin for Navigation Bar",
   "type": "module",
   "main": "dist/plugin.cjs.js",
@@ -12,25 +12,23 @@
     "android/src/main/",
     "android/build.gradle",
     "dist/",
+    "ios/Sources/",
     "ios/Plugin/",
-    "ios/Plugin/module.modulemap",
-    "ios/Plugin/Plugin.h",
     "Package.swift",
-    "NavigationBar.podspec",
     "EthionCapacitorNavigationBar.podspec"
   ],
-  "author": "Jeffrey Aboh",
+  "author": "Ethion",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jeffreyaboh/capacitor-navigation-bar.git"
+    "url": "git+https://github.com/ethion-cloud/capacitor-navigation-bar.git"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/",
     "access": "public"
   },
   "bugs": {
-    "url": "https://github.com/jeffreyaboh/capacitor-navigation-bar/issues"
+    "url": "https://github.com/ethion-cloud/capacitor-navigation-bar/issues"
   },
   "keywords": [
     "capacitor",
@@ -90,7 +88,7 @@
     "typescript": "5.9.3"
   },
   "peerDependencies": {
-    "@capacitor/core": ">=8.0.0"
+    "@capacitor/core": ">=6.0.0"
   },
   "engines": {
     "node": ">=22",
@@ -108,11 +106,5 @@
     "android": {
       "src": "android"
     }
-  },
-  "dependencies": {
-    "@capacitor/app": "^8.0.0",
-    "@capacitor/haptics": "^8.0.0",
-    "@capacitor/keyboard": "^8.0.0",
-    "@capacitor/status-bar": "^8.0.0"
   }
 }

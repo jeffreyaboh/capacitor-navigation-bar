@@ -19,8 +19,7 @@ let package = Package(
                 .product(name: "Capacitor", package: "capacitor-swift-pm"),
                 .product(name: "Cordova", package: "capacitor-swift-pm")
             ],
-            path: "ios/Plugin",
-            publicHeadersPath: "."
+            path: "ios/Sources/NavigationBarPlugin"
         )
     ]
 )
